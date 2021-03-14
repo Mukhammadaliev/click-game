@@ -1,0 +1,121 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  color: #222;
+  height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+
+.game-wrapper {
+  text-align: center;
+  position: relative;
+}
+.game-time {
+  margin: 0;
+  margin-top: 20px;
+}
+
+.game-result {
+  margin: 0;
+}
+
+.game-content {
+  height: 80%;
+  border: 2px solid #000;
+  background-color: bisque;
+  margin-bottom: 20px;
+  width: 100%;
+  position: relative;
+}
+
+.game {
+  width: 100%;
+  height: 100%;
+}
+.game-box {
+  position: absolute;
+  cursor: pointer;
+}
+.game-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  object-fit: contain;
+}
+.game-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  font-size: 20px;
+  transform: translate(-50%, -50%);
+  border: 1px solid #fff;
+  background-color: dodgerblue;
+  border-radius: 5px;
+  z-index: 3;
+}
+.game-footer {
+  text-align: center;
+}
+.timing {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+
+.hide {
+  display: none;
+}
+
+
+
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+  }
+}
